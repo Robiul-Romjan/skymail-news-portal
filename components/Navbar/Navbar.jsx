@@ -9,39 +9,39 @@ const Navbar = async () => {
 
 
     const navList = <>
-        <li className="font-medium hover:bg-sky-500 hover:text-rose-500 text-lg">
+        <li className="font-medium text-lg">
             <Link href="/">হোম</Link>
         </li>
-        <li className="font-medium hover:bg-sky-500 hover:text-rose-500 text-lg">
+        <li className="font-medium text-lg">
             <Link href="/about">জাতীয়</Link>
         </li>
-        <li className="font-medium hover:bg-sky-500 hover:text-rose-500 text-lg">
+        <li className="font-medium text-lg">
             <Link href="/about">ডেঙ্গু</Link>
         </li>
-        <li className="font-medium hover:bg-sky-500 hover:text-rose-500 text-lg">
+        <li className="font-medium text-lg">
             <Link href="/about">সারাদেশ</Link>
         </li>
-        <li className="font-medium hover:bg-sky-500 hover:text-rose-500 text-lg">
+        <li className="font-medium text-lg">
             <Link href="/about">রাজধানী</Link>
         </li>
-        <li className="font-medium hover:bg-sky-500 hover:text-rose-500 text-lg">
+        <li className="font-medium text-lg">
             <Link href="/about">আন্তর্জাতিক</Link>
         </li>
-        <li className="font-medium hover:bg-sky-500 hover:text-rose-500 text-lg">
+        <li className="font-medium text-lg">
             <Link href="/about">বিনোদন</Link>
         </li>
-        <li className="font-medium hover:bg-sky-500 hover:text-rose-500 text-lg">
+        <li className="font-medium text-lg">
             <Link href="/about">খেলা</Link>
         </li>
-        <li className="font-medium hover:bg-sky-500 hover:text-rose-500 text-lg">
+        <li className="font-medium text-lg">
             <Link href="/about">লাইফস্টাইল</Link>
         </li>
-        <li className="font-medium hover:bg-sky-500 hover:text-rose-500 text-lg">
+        <li className="font-medium text-lg">
             <Link href="/about">ধর্ম</Link>
         </li> 
     </>
     return (
-        <div className="sticky top-0 bg-sky-500 z-50">
+        <div className="sticky top-0 primary-background-color z-50">
             <div className="container mx-auto">
                 <div className="navbar">
                     <div className="navbar-start">

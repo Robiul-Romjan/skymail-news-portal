@@ -15,20 +15,20 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-    <link href="https://fonts.maateen.me/mukti/font.css" rel="stylesheet" />
-    <link href="https://fonts.maateen.me/solaiman-lipi/font.css" rel="stylesheet"></link>
 
-    <body className={inter.className} style={{ position: "relative" }}>
+      <link href="https://fonts.maateen.me/solaiman-lipi/font.css" rel="stylesheet"></link>
 
-      <div className="fixed bottom-0 right-0 left-0 z-50 px-6 bg-red-400">
-        <MarqueeTitle />
-      </div>
+      <body className={inter.className} style={{ position: "relative" }}>
 
-      <UpperNavbar />
-      <Navbar />
-      {children}
-      <Footer />
-    </body>
-  </html>
+        <div className="fixed bottom-0 right-0 left-0 z-50 px-6 bg-red-400">
+          <MarqueeTitle />
+        </div>
+
+        <UpperNavbar />
+        <Navbar />
+        {children}
+        <Footer />
+      </body>
+    </html>
   )
 }

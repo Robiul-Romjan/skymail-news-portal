@@ -2,26 +2,41 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+
+@import url('https://fonts.maateen.me/solaiman-lipi/font.css');
+
+/* common css */
+body{
+  background-color: #edeff4;
+  font-family: 'SolaimanLipi', sans-serif !important;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.primary-color{
+  color: #35b2e8;
+}
+.secondary-color{
+  color: #ca2f2f;
+}
+.primary-background-color{
+  background-color: #35b2e8;
+}
+.secondary-background-color{
+  background-color: #ca2f2f;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+img{
+  transition: all .6s ease-in-out;
+}
+
+
+
+
+.small-card:hover img{
+  transform: scale(1.1);
+}
+.large-home-card:hover img{
+  transform: scale(1.1);
+}
+.large-home-card:hover h1{
+  color: skyblue;
 }

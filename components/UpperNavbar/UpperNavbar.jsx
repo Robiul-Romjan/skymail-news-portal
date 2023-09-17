@@ -8,7 +8,7 @@ import headerCard from "../../public/header_card.jpg"
 const UpperNavbar = () => {
     return (
         <div>
-            <div className='bg-rose-500 text-white'>
+            <div className='secondary-background-color text-white'>
                 <div className='container mx-auto'>
                     <div className='flex justify-between py-2'>
                         <p>সোমবার, ০৪ সেপ্টেম্বর ২০২৩, ২০ ভাদ্র ১৪৩০</p>
