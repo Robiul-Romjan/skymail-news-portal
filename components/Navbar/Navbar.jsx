@@ -13,31 +13,31 @@ const Navbar = async () => {
             <Link href="/">হোম</Link>
         </li>
         <li className="font-medium text-lg">
-            <Link href="/about">জাতীয়</Link>
+            <Link href="/categoryPage/18">জাতীয়</Link>
         </li>
         <li className="font-medium text-lg">
-            <Link href="/about">ডেঙ্গু</Link>
+            <Link href="/categoryPage/23">ডেঙ্গু</Link>
         </li>
         <li className="font-medium text-lg">
-            <Link href="/about">সারাদেশ</Link>
+            <Link href="/categoryPage/24">সারাদেশ</Link>
         </li>
         <li className="font-medium text-lg">
-            <Link href="/about">রাজধানী</Link>
+            <Link href="/categoryPage/26">রাজধানী</Link>
         </li>
         <li className="font-medium text-lg">
-            <Link href="/about">আন্তর্জাতিক</Link>
+            <Link href="/categoryPage/20">আন্তর্জাতিক</Link>
         </li>
         <li className="font-medium text-lg">
-            <Link href="/about">বিনোদন</Link>
+            <Link href="/categoryPage/28">বিনোদন</Link>
         </li>
         <li className="font-medium text-lg">
-            <Link href="/about">খেলা</Link>
+            <Link href="/categoryPage/30">খেলা</Link>
         </li>
         <li className="font-medium text-lg">
-            <Link href="/about">লাইফস্টাইল</Link>
+            <Link href="/categoryPage/38">লাইফস্টাইল</Link>
         </li>
         <li className="font-medium text-lg">
-            <Link href="/about">ধর্ম</Link>
+            <Link href="/categoryPage/41">ধর্ম</Link>
         </li> 
     </>
     return (
