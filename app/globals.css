@@ -21,14 +21,15 @@ body {
 
  .nav-link-list:hover{
   color: crimson !important;
+  transition: all .3s ease-in-out;
 }
- .nav-link-list.active{
+ /* .nav-link-list.active{
   color: crimson !important;
-}
+} */
 
 .primary-background-color {
   /* background-color: #35b2e8; */
-  background-image: url("../public/title-bg-3.PNG");
+  background-image: url("../public/title-bg.PNG");
   background-repeat: repeat; 
   width: 100%;
   background-size: contain;

@@ -9,7 +9,7 @@ const Navbar = async () => {
 
 
     const navList = <>
-        <li className="font-medium text-lg">
+        <li className="font-semi-bold text-xl">
             <Link className="nav-link-list" href="/">হোম</Link>
         </li>
         <li className="font-medium text-lg">
