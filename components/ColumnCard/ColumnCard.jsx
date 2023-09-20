@@ -2,11 +2,11 @@ import Image from 'next/image';
 import React from 'react';
 import { FaCalendarDays } from 'react-icons/fa6';
 
-const ColumnCard = ({ image, title, date, des }) => {
+const ColumnCard = ({ image, title, date, des, featured_image_caption }) => {
     return (
-        <div className='small-card flex flex-col my-4 shadow-md hover:shadow-xl pb-0'>
+        <div className='small-card flex flex-col md:my-4 my-2 shadow-md hover:shadow-xl pb-0'>
             <div className='overflow-hidden'>
-                <Image className='w-full' width={200} height={100} src={`${process.env.BASE_URL}/${image}`} alt='top Image' />
+                <Image className='w-full' width={200} height={100} src={`${process.env.BASE_URL}/${image}`} alt={featured_image_caption} />
             </div>
             <div className='p-4 '>
                 <h1 className="text-xl font-semibold">{title}</h1>

@@ -10,7 +10,7 @@ const Footer = () => {
                    <Image src={logo} height={0} width={200} alt='Logo' />
                     <p>ACME Industries Ltd.<br />Providing reliable tech since 1992</p>
                 </aside>
-                <nav>
+                <nav cl>
                     <header className="footer-title">Services</header>
                     <a className="link link-hover">Branding</a>
                     <a className="link link-hover">Design</a>

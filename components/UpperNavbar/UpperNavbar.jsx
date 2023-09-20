@@ -7,7 +7,7 @@ import headerCard from "../../public/header_card.jpg"
 
 const UpperNavbar = () => {
     return (
-        <div>
+        <div className='hidden md:block'>
             <div className='secondary-background-color text-white'>
                 <div className='container mx-auto'>
                     <div className='flex justify-between py-2'>

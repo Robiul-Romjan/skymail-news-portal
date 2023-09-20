@@ -6,34 +6,49 @@
 @import url('https://fonts.maateen.me/solaiman-lipi/font.css');
 
 /* common css */
-body{
+body {
   background-color: #edeff4;
   font-family: 'SolaimanLipi', sans-serif !important;
 }
 
-.primary-color{
+.primary-color {
   color: #35b2e8;
 }
-.secondary-color{
+
+.secondary-color {
   color: #ca2f2f;
 }
-.primary-background-color{
-  background-color: #35b2e8;
+
+ .nav-link-list:hover{
+  color: crimson !important;
 }
-.secondary-background-color{
+ .nav-link-list.active{
+  color: crimson !important;
+}
+
+.primary-background-color {
+  /* background-color: #35b2e8; */
+  background-image: url("../public/title-bg-3.PNG");
+  background-repeat: repeat; 
+  width: 100%;
+  background-size: contain;
+  background-position: center;
+}
+
+.secondary-background-color {
   background-color: #ca2f2f;
 }
 
-img{
+img {
   transition: all .6s ease-in-out;
 }
 
 .animate-charcter {
   background-image: linear-gradient(-225deg,
-          #231557 0%,
-          #44107a 29%,
-          #ff1361 67%,
-          #fff800 100%);
+      #231557 0%,
+      #44107a 29%,
+      #ff1361 67%,
+      #fff800 100%);
   background-size: auto auto;
   background-clip: border-box;
   background-size: 200% auto;
@@ -49,16 +64,18 @@ img{
 
 @keyframes textclip {
   from {
-      background-position: 200% center;
+    background-position: 200% center;
   }
 }
 
-.small-card:hover img{
+.small-card:hover img {
   transform: scale(1.1);
 }
-.large-home-card:hover img{
+
+.large-home-card:hover img {
   transform: scale(1.1);
 }
-.large-home-card:hover h1{
+
+.large-home-card:hover h1 {
   color: skyblue;
 }

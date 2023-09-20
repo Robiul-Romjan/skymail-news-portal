@@ -48,7 +48,7 @@ const page = async ({ params }) => {
                 </div>
                 <div className='col-span-4'>
                     <h1 className='bg-rose-500 text-white text-center text-3xl'>আরো খবর</h1>
-                    <div className='bg-white p-2'>
+                    <div className='bg-white p-2 border-2 border-x-slate-500 border-b-slate-500'>
                         {
                             res.data?.featured_posts.map((ct) => 
                             <Link key={ct.id} href={`/detailPage/${ct.id}`}>

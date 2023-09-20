@@ -10,35 +10,35 @@ const Navbar = async () => {
 
     const navList = <>
         <li className="font-medium text-lg">
-            <Link href="/">হোম</Link>
+            <Link className="nav-link-list" href="/">হোম</Link>
         </li>
         <li className="font-medium text-lg">
-            <Link href="/categoryPage/18">জাতীয়</Link>
+            <Link className="nav-link-list" href="/categoryPage/18">জাতীয়</Link>
         </li>
         <li className="font-medium text-lg">
-            <Link href="/categoryPage/23">ডেঙ্গু</Link>
+            <Link className="nav-link-list" href="/categoryPage/23">ডেঙ্গু</Link>
         </li>
         <li className="font-medium text-lg">
-            <Link href="/categoryPage/24">সারাদেশ</Link>
+            <Link className="nav-link-list" href="/categoryPage/24">সারাদেশ</Link>
         </li>
         <li className="font-medium text-lg">
-            <Link href="/categoryPage/26">রাজধানী</Link>
+            <Link className="nav-link-list" href="/categoryPage/26">রাজধানী</Link>
         </li>
         <li className="font-medium text-lg">
-            <Link href="/categoryPage/20">আন্তর্জাতিক</Link>
+            <Link className="nav-link-list" href="/categoryPage/20">আন্তর্জাতিক</Link>
         </li>
         <li className="font-medium text-lg">
-            <Link href="/categoryPage/28">বিনোদন</Link>
+            <Link className="nav-link-list" href="/categoryPage/28">বিনোদন</Link>
         </li>
         <li className="font-medium text-lg">
-            <Link href="/categoryPage/30">খেলা</Link>
+            <Link className="nav-link-list" href="/categoryPage/30">খেলা</Link>
         </li>
         <li className="font-medium text-lg">
-            <Link href="/categoryPage/38">লাইফস্টাইল</Link>
+            <Link className="nav-link-list" href="/categoryPage/38">লাইফস্টাইল</Link>
         </li>
         <li className="font-medium text-lg">
-            <Link href="/categoryPage/41">ধর্ম</Link>
-        </li> 
+            <Link className="nav-link-list" href="/categoryPage/41">ধর্ম</Link>
+        </li>
     </>
     return (
         <div className="sticky top-0 primary-background-color z-50">
@@ -53,25 +53,26 @@ const Navbar = async () => {
                                 {navList}
                             </ul>
                         </div>
-                        <Link className="md:hidden" href="/"><Image className="h-[60px] w-[120px]" height={0} width={0} src={logo} alt="logo" /></Link>
+                        <div className="ml-auto">
+                            <Link className="md:hidden" href="/"><Image className="h-[60px] w-[120px]" height={0} width={0} src={logo} alt="logo" /></Link>
+                        </div>
                     </div>
                     <div className="navbar-center hidden text-white lg:flex">
                         <ul className="gap-4 menu-horizontal px-1">
                             {navList}
-                            
                         </ul>
                     </div>
-                    
 
-                        <div className="navbar-end relative">
-                         <input className="absolute hidden right-16 w-full" type="text" />
-                             <button className="btn btn-circle btn-outline">
-                                <span className="">
-                                    <FaSistrix />
-                                </span>
-                            </button>
-                        </div>
-                    
+
+                    <div className="navbar-end relative">
+                        <input className="absolute hidden right-16 w-full" type="text" />
+                        <button className="btn btn-circle btn-outline">
+                            <span className="">
+                                <FaSistrix />
+                            </span>
+                        </button>
+                    </div>
+
                 </div>
             </div>
         </div>

@@ -27,7 +27,7 @@ const page = async ({ params }) => {
                 </div>
                 <div className='col-span-4 mt-4'>
                     <h1 className='bg-rose-500 text-white text-center text-3xl'>সর্বশেষ খবর</h1>
-                    <div className='bg-white px-2 py-1'>
+                    <div className='bg-white px-2 py-1 border-2 border-x-slate-500 border-b-slate-500'>
                         {
                             todaysNews.data?.slice(0, 6).map((tn) =>
                                 <Link key={tn.id} href={`/detailPage/${tn.id}`}>
