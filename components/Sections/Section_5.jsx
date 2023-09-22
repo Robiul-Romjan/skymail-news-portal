@@ -1,3 +1,4 @@
+"use client"
 import React from 'react';
 import Title from '../Shared/Title/Title';
 import ColumnVideoCard from '../ColumnVideoCard/ColumnVideoCard';
@@ -6,7 +7,7 @@ import SmallCard from '../SmallCard/SmallCard';
 const Section_5 = ({ data }) => {
     return (
         <>
-            <Title title={"ভিডিও"} />
+            <Title title={"ভিডিও"} category_id={28} />
             <div className='grid grid-cols-12 gap-4 mt-8 mb-8'>
                 <div className="md:col-span-8 col-span-12 bg-black text-white">
                     <div className="grid md:grid-cols-2 gap-6  p-3">

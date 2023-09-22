@@ -1,3 +1,4 @@
+"use client"
 import Image from 'next/image';
 import React from 'react';
 import logo from "../../public/skymail-1.png"
@@ -12,23 +13,23 @@ const Footer = () => {
                 </aside>
                 <nav cl>
                     <header className="footer-title">Services</header>
-                    <a className="link link-hover">Branding</a>
-                    <a className="link link-hover">Design</a>
-                    <a className="link link-hover">Marketing</a>
-                    <a className="link link-hover">Advertisement</a>
+                    <p className="link link-hover">Branding</p>
+                    <p className="link link-hover">Design</p>
+                    <p className="link link-hover">Marketing</p>
+                    <p className="link link-hover">Advertisement</p>
                 </nav>
                 <nav>
                     <header className="footer-title">Company</header>
-                    <a className="link link-hover">About us</a>
-                    <a className="link link-hover">Contact</a>
-                    <a className="link link-hover">Jobs</a>
-                    <a className="link link-hover">Press kit</a>
+                    <p className="link link-hover">About us</p>
+                    <p className="link link-hover">Contact</p>
+                    <p className="link link-hover">Jobs</p>
+                    <p className="link link-hover">Press kit</p>
                 </nav>
                 <nav>
                     <header className="footer-title">Legal</header>
-                    <a className="link link-hover">Terms of use</a>
-                    <a className="link link-hover">Privacy policy</a>
-                    <a className="link link-hover">Cookie policy</a>
+                    <p className="link link-hover">Terms of use</p>
+                    <p className="link link-hover">Privacy policy</p>
+                    <p className="link link-hover">Cookie policy</p>
                 </nav>
             </footer>
         </div>

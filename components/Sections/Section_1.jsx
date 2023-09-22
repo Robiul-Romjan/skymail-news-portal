@@ -1,3 +1,4 @@
+"use client"
 import LargeHomeCard from '@/app/home/HomeCard/LargeHomeCard';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -11,12 +12,17 @@ const Section_1 = ({ data }) => {
             <div className='grid md:grid-cols-12 gap-4 md:mt-8 mt-4'>
                 <div className="md:col-span-3 col-span-12 bg-rose-500 text-white py-2 px-3">
                     {
-                        data?.slice(0, 3).map((ct) => <Link href={`/detailPage/${ct.id}`} key={ct.id}>
-                            <div className='flex gap-4 items-center py-2 border-b-2 border-b-white'>
-                                <Image className='w-24 h-24 rounded-full border-2 border-green-500' width={96} height={96} src={`${process.env.BASE_URL}/${ct.featured_image}`} alt={ct?.featured_image_caption} />
-                                <h1 className='text-lg font-medium'>{ct.title}</h1>
-                            </div>
-                        </Link>)
+                        data?.slice(0, 3).map((ct) =>
+                            <Link href={`/detailPage/${ct.id}`} key={ct.id}>
+                                <div className='flex gap-4 items-center py-2 border-b-2 border-b-white'>
+                                    <Image 
+                                    className='w-24 h-24 rounded-full border-2 border-green-500' width={96} 
+                                    height={96} 
+                                    src={`${process.env.BASE_URL}/${ct.featured_image}`} 
+                                    alt={ct?.featured_image_caption} />
+                                    <h1 className='text-lg font-medium'>{ct.title}</h1>
+                                </div>
+                            </Link>)
                     }
                 </div>
                 <div className="md:col-span-6 col-span-12">

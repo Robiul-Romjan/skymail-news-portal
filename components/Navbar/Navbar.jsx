@@ -1,12 +1,10 @@
+"use client"
 import Image from "next/image";
 import Link from "next/link";
 import logo from "../../public/skymail-1.png"
 import { FaSistrix } from "react-icons/fa";
 
-
-
-const Navbar = async () => {
-
+const Navbar = () => {
 
     const navList = <>
         <li className="font-semi-bold text-xl">

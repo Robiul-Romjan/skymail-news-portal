@@ -1,3 +1,4 @@
+"use client"
 import React from 'react';
 import Title from '../Shared/Title/Title';
 import Link from 'next/link';
@@ -7,7 +8,7 @@ import SmallCard from '../SmallCard/SmallCard';
 const Section_4 = ({ data }) => {
     return (
         <>
-            <Title title={"সারাদেশ"} />
+            <Title title={"সারাদেশ"} category_id={24} />
             <div className='grid grid-cols-12 gap-4 md:mt-8 mt-4'>
                 <div className="md:col-span-8 col-span-12 bg-white px-3">
                     {

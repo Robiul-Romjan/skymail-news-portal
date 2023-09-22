@@ -1,3 +1,4 @@
+"use client"
 import React from 'react';
 import Title from '../Shared/Title/Title';
 import LargeHomeCard from '@/app/home/HomeCard/LargeHomeCard';
@@ -7,7 +8,7 @@ import Link from 'next/link';
 const Section_3 = ({ data }) => {
     return (
         <div>
-            <Title title={"আন্তর্জাতিক"} />
+            <Title title={"আন্তর্জাতিক"} category_id={20} />
             <div className='grid md:grid-cols-2 gap-4 mt-4 md:mt-8'>
                 <div>
                     {
