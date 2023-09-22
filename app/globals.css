@@ -1,9 +1,9 @@
+@import url('https://fonts.maateen.me/solaiman-lipi/font.css');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-
-@import url('https://fonts.maateen.me/solaiman-lipi/font.css');
 
 /* common css */
 body {
@@ -28,12 +28,12 @@ body {
 } */
 
 .primary-background-color {
-  /* background-color: #35b2e8; */
-  background-image: url("../public/title-bg.PNG");
+  background-color: #35b2e8;
+  /* background-image: url("../public/title-bg.PNG") !important;
   background-repeat: repeat; 
   width: 100%;
   background-size: contain;
-  background-position: center;
+  background-position: center; */
 }
 
 .secondary-background-color {

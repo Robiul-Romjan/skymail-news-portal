@@ -31,7 +31,13 @@ const Section_1 = ({ data }) => {
                             data?.slice(0, 1).map((ct) =>
                                 <Link key={ct.id} href={`/detailPage/${ct.id}`}>
                                     <div>
-                                        <LargeHomeCard title={ct.title} image={ct?.featured_image} date={ct?.updated_at} author={ct?.author} featured_image_caption={ct.featured_image_caption} />
+                                        <LargeHomeCard 
+                                        title={ct.title} 
+                                        image={ct.featured_image} 
+                                        date={ct?.updated_at} 
+                                        author={ct?.author} 
+                                        featured_image_caption={ct.featured_image_caption}
+                                         />
                                     </div>
                                 </Link>)
                         }
@@ -42,7 +48,12 @@ const Section_1 = ({ data }) => {
                         data?.slice(2, 5).map((ct) =>
                             <Link href={`/detailPage/${ct.id}`} key={ct.id}>
                                 <div className='flex gap-4 items-center py-2 border-b-2 border-b-white'>
-                                    <Image className='w-24 h-24 rounded-full border-2 border-green-500' width={96} height={96} src={`${process.env.BASE_URL}/${ct.featured_image}`} alt={ct.featured_image_caption} />
+                                    <Image 
+                                    className='w-24 h-24 rounded-full border-2 border-green-500' 
+                                    width={96} 
+                                    height={96} 
+                                    src={`${process.env.BASE_URL}/${ct.featured_image}`} 
+                                    alt={ct.featured_image_caption} />
                                     <h1 className='text-lg font-medium'>{ct.title}</h1>
                                 </div>
                             </Link>)
@@ -53,7 +64,12 @@ const Section_1 = ({ data }) => {
                 {
                     data?.map((ct) =>
                         <Link href={`/detailPage/${ct.id}`} key={ct.id}>
-                            <SmallCard title={ct.title} image={ct?.featured_image} date={ct?.updated_at} featured_image_caption={ct.featured_image_caption} />
+                            <SmallCard 
+                            title={ct.title} 
+                            image={ct.featured_image} 
+                            date={ct?.updated_at} 
+                            featured_image_caption={ct.featured_image_caption} 
+                            />
                         </Link>)
                 }
             </div>

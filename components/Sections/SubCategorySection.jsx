@@ -150,7 +150,7 @@ const SubCategorySection = ({ data }) => {
                                     <ColumnCard
                                         key={sc.id}
                                         title={sc?.title}
-                                        image={sc?.featured_image.slice(7)}
+                                        image={sc.featured_image.slice(7)}
                                         date={sc?.updated_at}
                                         des={sc?.featured_image_caption}
                                         featured_image_caption={sc?.featured_image_caption}
@@ -180,7 +180,7 @@ const SubCategorySection = ({ data }) => {
                                     <ColumnCard
                                         key={sc.id}
                                         title={sc?.title}
-                                        image={sc?.featured_image.slice(7)}
+                                        image={sc.featured_image.slice(7)}
                                         date={sc?.updated_at}
                                         des={sc?.featured_image_caption}
                                         featured_image_caption={sc?.featured_image_caption}
@@ -210,7 +210,7 @@ const SubCategorySection = ({ data }) => {
                                     <ColumnCard
                                         key={sc.id}
                                         title={sc?.title}
-                                        image={sc?.featured_image.slice(7)}
+                                        image={sc.featured_image.slice(7)}
                                         date={sc?.updated_at}
                                         des={sc?.featured_image_caption}
                                         featured_image_caption={sc?.featured_image_caption}
@@ -242,7 +242,7 @@ const SubCategorySection = ({ data }) => {
                             <Link key={ct.id} href={`/detailPage/${ct.id}`}>
                                 <SmallCard
                                     title={ct?.title}
-                                    image={ct?.featured_image.slice(7)}
+                                    image={ct.featured_image.slice(7)}
                                     date={ct?.updated_at}
                                     featured_image_caption={ct?.featured_image_caption}
                                 />

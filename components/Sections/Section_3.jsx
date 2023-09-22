@@ -17,7 +17,7 @@ const Section_3 = ({ data }) => {
                                 <div>
                                     <LargeHomeCard
                                         title={ct.title}
-                                        image={ct?.featured_image}
+                                        image={ct.featured_image}
                                         date={ct?.updated_at}
                                         author={ct?.author}
                                         featured_image_caption={ct?.featured_image_caption}
@@ -34,7 +34,7 @@ const Section_3 = ({ data }) => {
                                     <div>
                                         <MediumHomeCard
                                             title={ct.title}
-                                            image={ct?.featured_image}
+                                            image={ct.featured_image}
                                             date={ct?.updated_at}
                                             author={ct?.author}
                                             featured_image_caption={ct?.featured_image_caption}

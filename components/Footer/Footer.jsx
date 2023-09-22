@@ -6,7 +6,7 @@ import logo from "../../public/skymail-1.png"
 const Footer = () => {
     return (
         <div className='mb-12'>
-            <footer className="footer p-10 bg-black text-white">
+            <div className="footer p-10 bg-black text-white">
                 <aside>
                    <Image src={logo} height={0} width={200} alt='Logo' />
                     <p>ACME Industries Ltd.<br />Providing reliable tech since 1992</p>
@@ -31,7 +31,7 @@ const Footer = () => {
                     <p className="link link-hover">Privacy policy</p>
                     <p className="link link-hover">Cookie policy</p>
                 </nav>
-            </footer>
+            </div>
         </div>
     );
 };

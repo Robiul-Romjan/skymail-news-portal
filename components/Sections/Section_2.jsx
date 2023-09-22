@@ -14,7 +14,7 @@ const Section_2 = ({ data }) => {
                         <Link key={ts?.id} href={`/detailPage/${ts?.id}`} >
                             <ColumnCard
                                 title={ts?.title}
-                                image={ts?.featured_image}
+                                image={ts.featured_image}
                                 date={ts?.updated_at}
                                 des={ts?.featured_image_caption}
                                 featured_image_caption={ts?.featured_image_caption}

@@ -7,7 +7,7 @@ import { FaSistrix } from "react-icons/fa";
 const Navbar = () => {
 
     const navList = <>
-        <li className="font-semi-bold text-xl">
+        <li className="font-medium text-lg">
             <Link className="nav-link-list" href="/">হোম</Link>
         </li>
         <li className="font-medium text-lg">

@@ -16,7 +16,7 @@ const Section_5 = ({ data }) => {
                                 <ColumnVideoCard
                                     key={tv?.id}
                                     title={tv?.title}
-                                    image={tv?.featured_image}
+                                    image={tv.featured_image}
                                     date={tv?.updated_at}
                                     category_name={tv?.category_name}
                                 />
@@ -31,7 +31,7 @@ const Section_5 = ({ data }) => {
                             data?.map((tv) => <div key={tv.id}>
                                 <SmallCard
                                     title={tv?.title}
-                                    image={tv?.featured_image}
+                                    image={tv.featured_image}
                                     date={tv?.updated_at}
                                     featured_image_caption={tv?.featured_image_caption}
                                 />

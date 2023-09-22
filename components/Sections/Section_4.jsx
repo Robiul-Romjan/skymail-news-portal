@@ -32,7 +32,7 @@ const Section_4 = ({ data }) => {
                                 <Link key={ct.id} href={`/detailPage/${ct.id}`}>
                                     <SmallCard 
                                     title={ct?.title} 
-                                    image={ct?.featured_image} 
+                                    image={ct.featured_image} 
                                     date={ct?.updated_at} 
                                     featured_image_caption={ct?.featured_image_caption}
                                     />

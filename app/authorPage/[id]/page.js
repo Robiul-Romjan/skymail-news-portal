@@ -1,13 +1,12 @@
-
 import { base_url } from '@/api/Base_Url';
-import axios from 'axios';
 import Image from 'next/image';
 import React from 'react';
 import authorImg from "../../../public/author-1.jpg"
 import Link from 'next/link';
 
 const page = async () => {
-    const res = await axios.get(`${base_url}/api/todays-news`)
+    const res = await fetch(`${base_url}/api/todays-news`)
+    const data = await res.json()
 
     return (
         <>
@@ -22,7 +21,7 @@ const page = async () => {
                 <div className="md:col-span-2"></div>
                 <div className="md:col-span-8 col-span-12">
                     {
-                        res.data.slice(0, 8).map((an) =>
+                        data.slice(0, 8).map((an) =>
                             <Link key={an.id} href={`/detailPage/${an.id}`}>
                                 <div className="grid grid-cols-12 gap-8 mb-4 border-b-2 border-b-sky-400 pb-3">
                                     <div className="md:col-span-8 col-span-12">
