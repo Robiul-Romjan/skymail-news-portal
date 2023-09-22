@@ -1,4 +1,4 @@
-"use client"
+
 import React from 'react';
 import Title from '../Shared/Title/Title';
 import LargeHomeCard from '@/app/home/HomeCard/LargeHomeCard';

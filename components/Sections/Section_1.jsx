@@ -1,4 +1,4 @@
-"use client"
+
 import LargeHomeCard from '@/app/home/HomeCard/LargeHomeCard';
 import Image from 'next/image';
 import Link from 'next/link';
